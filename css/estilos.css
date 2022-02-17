@@ -2,6 +2,7 @@
 
 html {
     box-sizing: border-box;
+    height: 100%;
   }
   *,*:before,*:after {
     box-sizing: inherit;
@@ -18,17 +19,20 @@ html {
 body {
     background-color: #6fa8dc;
     font-family: cursive;
+    height: 100%;
 }
 header {
     background-color: #085394;
     height: 80px;
     width: 100%;
     border: 2px solid #274e13;
-    position: fixed;
-    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+header.formulario {
+    position: fixed;
+    top: 0;
 }
 h1 {
     margin-right: 2%;
@@ -37,6 +41,9 @@ header img {
     width: 130px;
     margin-left: 2%;
 }
+h2 {
+    text-align: center;
+}
 footer {
     background-color: #085394;
     position: fixed;
@@ -44,6 +51,9 @@ footer {
     width: 100%;
     border: 2px solid #274e13;
 }
+/* footer.formulario {
+
+} */
 footer p {
     text-align: center;
 }
@@ -57,7 +67,7 @@ footer p {
     justify-content: center;
     align-items: center;
 }
-.contenido {
+div.contenido {
     background-color: #9fc5f8;
     width: 95%;
     margin: 0 auto;
@@ -65,8 +75,7 @@ footer p {
     padding: 25px;
     border: 2px solid #085394;
 }
-h2 {
-    text-align: center;
+div.contenido h2 {
     margin: 15px 0 40px;
 }
 form label {
@@ -89,12 +98,21 @@ label input {
     border: 2px solid #6aa84f;
     padding: 5px;
 }
-input#ingresar {
+.button {
     background-color: #6aa84f;
     color: #ffffff;
     display: block;
     margin: 0 auto;
     padding: 4px 20px;
+    /* border: none; */
+    border: 2px solid #274e13;
+}
+.button:hover {
+    background-color: #274e13;
+    cursor: pointer;
+}
+.button:active {
+    transform: scale(.9);
 }
 @media only screen and (min-width:500px) {
     h1 {
@@ -103,14 +121,36 @@ input#ingresar {
     header img {
         margin-left: 30px;
     }
-    .contenido {
+    div.contenido {
         width: 400px;
     }
 }
 
 /** PÁGINA PRINCIPAL **/
 
-
+div.contenido-actual {
+    background-color: #999999;
+    border: 2px solid #085394;
+}
+main {
+    height: 100%;
+}
+div.contenedor {
+    height: 100%;
+}
+aside {
+    background-color: #597eaa;
+    height: 100%;
+}
 aside img {
     width: 120px;
+}
+@media only screen and (min-width:500px) {
+    aside {
+        float: left;
+        width: 180px;
+    }
+    section {
+        float: right;
+    }
 }
