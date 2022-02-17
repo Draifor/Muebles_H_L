@@ -198,3 +198,11 @@ aside button.button {
         text-align: center;
     }
 }
+
+/** PÁGINA CLIENTES**/
+div.contenedor-botones a img{
+    width: 30px;
+}
+table.clientes tr {
+    background-color: antiquewhite;
+}
