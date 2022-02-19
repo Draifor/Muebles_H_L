@@ -23,7 +23,7 @@ body {
 
 /** Globales */
 
-div.contenedor {
+.contenedor {
     /* width: 98%; */
     /* max-width: 1100px; */
     min-height: 100vh;
@@ -105,7 +105,7 @@ footer p {
 
 /** INICIO DE SESIÓN */
 
-div.contenedor {
+.contenedor {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 125px
@@ -182,29 +182,59 @@ label input {
 
 /** PÁGINA PRINCIPAL **/
 
-div.contenedor-index {
+main.contenedor-index {
+    grid-template-rows: 125px
+                        33px
+                        1fr
+                        0.5fr
+                        96px;
     row-gap: 0;
 }
-@media only screen and (min-width:590px) {
-    div.contenedor-index {
-        grid-template-columns: 1fr 2fr;
+@media only screen and (min-width:410px) {
+    main.contenedor {
         grid-template-rows: 78px
                             33px
                             1fr
+                            0.5fr
                             73px;
     }
-    header.header-index, div.pagina-actual {
-        grid-column: 1 / 3;
+}
+@media only screen and (min-width:590px) {
+    main.contenedor-index {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 78px
+        33px
+        1fr
+        73px;
+        grid-template-areas:
+        "my-header my-header"
+        "actual actual"
+        "my-aside my-main"
+        "my-footer my-footer";
+    }
+    header.header-index {
+        grid-area: my-header;
+    }
+    div.pagina-actual {
+        grid-area: actual;
     }
     section {
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
+        grid-area: my-main;
     }
     aside {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
+        grid-area: my-aside;
+    }
+    footer {
+        grid-area: my-footer;
     }
 
+}
+@media only screen and (min-width:1100px) {
+    div.contenedor {
+        grid-template-rows: 11vh
+                            1fr
+                            11vh;
+    }
 }
 div.pagina-actual {
     background-color: #999999;
@@ -216,7 +246,7 @@ section {
 ul.menu-principal {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 ul.menu-principal li a {
     width: 170px;
