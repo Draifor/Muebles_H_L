@@ -40,7 +40,7 @@ div.contenedor {
     }
 } */
 .seccion {
-    padding: 30px 0 73px;
+    padding: 30px;
 }
 h2 {
     text-align: center;
@@ -128,7 +128,6 @@ div.contenedor {
     }
 }
 .contenedor-principal {
-    /* width: 100%; */
     height: 100%;
     display: flex;
     justify-content: center;
@@ -139,7 +138,6 @@ div.contenido {
     width: 95%;
     max-width: 400px;
     margin: 0 auto;
-    /* height: 300px; */
     padding: 25px 10px;
     border: 2px solid #085394;
 }
@@ -154,7 +152,6 @@ form label {
 label span {
     background-color: #6fa8dc;
     border: 2px solid #274e13;
-    /* margin-right: 20px; */
 }
 span.usuario{
     padding: 0 20px;
@@ -185,13 +182,33 @@ label input {
 
 /** PÁGINA PRINCIPAL **/
 
+div.contenedor-index {
+    row-gap: 0;
+}
+@media only screen and (min-width:590px) {
+    div.contenedor-index {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 78px
+                            33px
+                            1fr
+                            73px;
+    }
+    header.header-index, div.pagina-actual {
+        grid-column: 1 / 3;
+    }
+    section {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+    aside {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+}
 div.pagina-actual {
     background-color: #999999;
     border: 2px solid #085394;
-}
-div.contenedor-index {
-    display: flex;
-    flex-wrap: wrap-reverse;
 }
 section {
     text-align: center;
@@ -199,21 +216,20 @@ section {
 ul.menu-principal {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 ul.menu-principal li a {
     width: 170px;
     height: 70px;
     background-color: #9fc5f8;
-    display: inline-block;
-    margin: 20px 10px 10px;
     font-size: 1.5em;
     text-decoration: none;
     color: #000;
-    padding-top: 17px;
     border: 2px solid #274e13;
-}
-ul.menu-principal li:nth-child(5) a {
-    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px 10px 10px; */
 }
 ul.menu-principal li {
     /* float: left; */
@@ -221,19 +237,19 @@ ul.menu-principal li {
 }
 @media only screen and (min-width:590px) {
     ul.menu-principal li {
-        width: 50%;
+        /* width: 50%; */
     }
 }
 @media only screen and (min-width:800px) {
     ul.menu-principal li {
-        width: 33.3%;
+        /* width: 33.3%; */
     }
 }
 aside {
     background-color: #597eaa;
     text-align: center;
-    height: 360px;
-    width: 100%;
+    /* height: 360px; */
+    /* width: 100%; */
     border: 2px solid #085394;
 }
 aside img {
@@ -253,24 +269,24 @@ aside button.button {
     margin-top: 10px;
 }
 @media only screen and (max-width:370px) {
-    aside .seccion {
+    /* aside .seccion {
         padding-bottom: 105px;
-    }
+    } */
 }
 @media only screen and (min-width:590px) {
-    div.contenedor-index {
-        /* display: flex;
-        flex-flow: row-reverse wrap; */
-    }
+    /* div.contenedor-index {
+        display: flex;
+        flex-flow: row-reverse wrap;
+    } */
     aside {
-        height: 79vh;
+        /* height: 79vh; */
         /* float: left; */
-        width: 180px;
+        /* width: 180px; */
         border-top: none;
     }
     section {
         /* float: right; */
-        width: 65%;
+        /* width: 65%; */
     }
     section a {
         text-align: center;
