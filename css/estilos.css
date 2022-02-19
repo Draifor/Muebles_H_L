@@ -171,9 +171,9 @@ main.contenedor-index {
                             73px;
     }
 }
-@media only screen and (min-width:630px) {
+@media only screen and (min-width:690px) {
     main.contenedor-index {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 4fr;
         grid-template-rows: 78px
         33px
         1fr
@@ -231,6 +231,11 @@ ul.menu-principal {
         grid-template-rows: repeat(3, 1fr);
     }
 }
+@media only screen and (min-width:900px) {
+    ul.menu-principal {
+        width: 80%;
+    }
+}
 ul.menu-principal li {
     padding: 10px;
     display: flex;
@@ -238,8 +243,8 @@ ul.menu-principal li {
     align-items: center;
 }
 ul.menu-principal li a {
-    width: 170px;
-    height: 70px;
+    width: 200px;
+    height: 90px;
     background-color: #9fc5f8;
     font-size: 1.5em;
     text-decoration: none;
