@@ -24,18 +24,19 @@ body {
 /** Globales */
 
 div.contenedor {
-    width: 98%;
-    max-width: 1100px;
+    /* width: 98%; */
+    /* max-width: 1100px; */
+    min-height: 100vh;
     margin: 0 auto;
 }
 @media only screen and (min-width:480px) {
     div.contenedor {
-        width: 95%;
+        /* width: 95%; */
     }
 }
 @media only screen and (min-width: 768px) {
     div.contenedor {
-        width: 90%;
+        /* width: 90%; */
     }
 }
 .seccion {
@@ -87,9 +88,9 @@ header img {
 
 footer {
     background-color: #085394;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    /* position: fixed;
+    bottom: 0; */
+    /* width: 100%; */
     border: 2px solid #274e13;
 }
 footer p {
@@ -97,15 +98,23 @@ footer p {
 }
 @media only screen and (min-width:1100px) {
     footer {
-        height: 9vh;
+        /* height: 9vh; */
     }
 }
 
 /** INICIO DE SESIÓN */
 
+div.contenedor {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 125px
+                        1fr
+                        96px;
+    row-gap: 10px;
+}
 .contenedor-principal {
-    width: 100%;
-    height: 76vh;
+    /* width: 100%; */
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,18 +122,14 @@ footer p {
 div.contenido {
     background-color: #9fc5f8;
     width: 95%;
+    max-width: 400px;
     margin: 0 auto;
-    height: 300px;
-    padding: 25px;
+    /* height: 300px; */
+    padding: 25px 10px;
     border: 2px solid #085394;
 }
-@media only screen and (min-width:500px) {
-    div.contenido {
-        width: 400px;
-    }
-}
 div.contenido h2 {
-    margin: 15px 0 40px;
+    margin: 0 0 30px;
 }
 form label {
     display: block;
@@ -134,7 +139,7 @@ form label {
 label span {
     background-color: #6fa8dc;
     border: 2px solid #274e13;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 span.usuario{
     padding: 0 20px;
@@ -145,6 +150,7 @@ span.contraseña {
 label input {
     border: 2px solid #6aa84f;
     padding: 5px;
+    margin: 10px 20px 0;
 }
 .button {
     background-color: #6aa84f;
