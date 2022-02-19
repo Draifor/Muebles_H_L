@@ -44,6 +44,9 @@ header img {
 h2 {
     text-align: center;
 }
+ul {
+    list-style: none;
+}
 footer {
     background-color: #085394;
     position: fixed;
@@ -200,9 +203,15 @@ aside button.button {
 }
 
 /** PÁGINA CLIENTES**/
-div.contenedor-botones a img{
+
+ul.contenedor-botones {
+    display: flex;
+    flex-wrap: wrap;
+}
+ul.contenedor-botones a img{
     width: 30px;
 }
+
 table.clientes tr {
     background-color: antiquewhite;
 }
