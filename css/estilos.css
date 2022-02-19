@@ -1,8 +1,5 @@
-/** GENERALES */
-
 html {
     box-sizing: border-box;
-    height: 100%;
   }
   *,*:before,*:after {
     box-sizing: inherit;
@@ -16,34 +13,78 @@ html {
   content: " ";
   display: table;
 }
+.clearfix::after {
+  clear: both;
+}
 body {
     background-color: #6fa8dc;
     font-family: cursive;
-    height: 80%;
 }
-header {
-    background-color: #085394;
-    height: 80px;
-    width: 100%;
-    border: 2px solid #274e13;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+/** Globales */
+
+div.contenedor {
+    width: 98%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
-header.formulario {
-    position: fixed;
-    top: 0;
+@media only screen and (min-width:480px) {
+    div.contenedor {
+        width: 95%;
+    }
 }
-h1 {
-    margin-right: 2%;
+@media only screen and (min-width: 768px) {
+    div.contenedor {
+        width: 90%;
+    }
 }
-header img {
-    width: 130px;
-    margin-left: 2%;
+.seccion {
+    padding: 30px 0 73px;
 }
 h2 {
     text-align: center;
 }
+ul {
+    list-style: none;
+}
+
+/** Header **/
+header {
+    background-color: #085394;
+    border: 2px solid #274e13;
+    display: flex;
+    justify-content: center;
+}
+div.contenido-header {
+    padding: 5px;
+}
+h1 {
+    margin-right: 3vw;
+}
+header img {
+    width: 130px;
+    margin: 0 auto;
+    display: block;
+}
+@media only screen and (min-width:410px) {
+    h1 {
+        float: left;
+    }
+    header img {
+        float: right;
+    }
+}
+@media only screen and (min-width:1100px) {
+    h1 {
+        font-size: 3vw;
+    }
+    header img {
+        width: 11.5vw;
+    }
+}
+
+/** Footer **/
+
 footer {
     background-color: #085394;
     position: fixed;
@@ -51,18 +92,20 @@ footer {
     width: 100%;
     border: 2px solid #274e13;
 }
-/* footer.formulario {
-
-} */
 footer p {
     text-align: center;
+}
+@media only screen and (min-width:1100px) {
+    footer {
+        height: 9vh;
+    }
 }
 
 /** INICIO DE SESIÓN */
 
 .contenedor-principal {
     width: 100%;
-    height: 100vh;
+    height: 76vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,6 +117,11 @@ div.contenido {
     height: 300px;
     padding: 25px;
     border: 2px solid #085394;
+}
+@media only screen and (min-width:500px) {
+    div.contenido {
+        width: 400px;
+    }
 }
 div.contenido h2 {
     margin: 15px 0 40px;
@@ -104,7 +152,6 @@ label input {
     display: block;
     margin: 0 auto;
     padding: 4px 20px;
-    /* border: none; */
     border: 2px solid #274e13;
 }
 .button:hover {
@@ -114,34 +161,25 @@ label input {
 .button:active {
     transform: scale(.9);
 }
-@media only screen and (min-width:500px) {
-    h1 {
-        margin-right: 30px;
-    }
-    header img {
-        margin-left: 30px;
-    }
-    div.contenido {
-        width: 400px;
-    }
-}
 
 /** PÁGINA PRINCIPAL **/
 
-div.contenido-actual {
+div.pagina-actual {
     background-color: #999999;
     border: 2px solid #085394;
 }
-main {
-    height: 100%;
-}
-div.contenedor {
-    height: 100%;
+div.contenedor-index {
+    display: flex;
+    flex-wrap: wrap-reverse;
 }
 section {
     text-align: center;
 }
-section a {
+ul.menu-principal {
+    display: flex;
+    flex-flow: row wrap;
+}
+ul.menu-principal li a {
     width: 170px;
     height: 70px;
     background-color: #9fc5f8;
@@ -153,23 +191,33 @@ section a {
     padding-top: 17px;
     border: 2px solid #274e13;
 }
-section a:nth-child(5) {
-    padding-top: 2px;
-    /* float: left; */
-    /* left: 33px; */
+ul.menu-principal li:nth-child(5) a {
+    padding-top: 0;
 }
-section a:nth-child(6) {
-    /* margin-top: 2px; */
+ul.menu-principal li {
+    /* float: left; */
+    padding: 10px;
+}
+@media only screen and (min-width:590px) {
+    ul.menu-principal li {
+        width: 50%;
+    }
+}
+@media only screen and (min-width:800px) {
+    ul.menu-principal li {
+        width: 33.3%;
+    }
 }
 aside {
     background-color: #597eaa;
     text-align: center;
     height: 360px;
+    width: 100%;
     border: 2px solid #085394;
 }
 aside img {
     width: 130px;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 aside p.nombre {
     font-size: 1em;
@@ -183,16 +231,25 @@ aside button.button {
     padding: 2px 0px;
     margin-top: 10px;
 }
+@media only screen and (max-width:370px) {
+    aside .seccion {
+        padding-bottom: 105px;
+    }
+}
 @media only screen and (min-width:590px) {
+    div.contenedor-index {
+        /* display: flex;
+        flex-flow: row-reverse wrap; */
+    }
     aside {
-        height: 100%;
-        float: left;
+        height: 79vh;
+        /* float: left; */
         width: 180px;
         border-top: none;
     }
     section {
-        float: right;
-        width: 70%;
+        /* float: right; */
+        width: 65%;
     }
     section a {
         text-align: center;
