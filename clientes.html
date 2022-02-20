@@ -9,30 +9,34 @@
 </head>
 
 <body>
-    <header>
-        <h1>MUEBLES H&L</h1>
-        <img src="img/logo.jpeg" alt="Logo Muebles H&L">
+    <main class="contenedor-tabla contenedor">
+        <header class="header-nav">
+            <div class="contenido-header">
+                <h1>MUEBLES H&L</h1>
+                <img src="img/logo.jpeg" alt="Logo Muebles H&L">
+            </div>
 
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="clientes.html">Clientes</a>
-            <a href="diseños.html">Diseños</a>
-            <a href="materiales.html">Materiales</a>
-            <a href="productos.html">Productos</a>
-            <a href="orden de compra.html">Orden de Compra</a>
-            <a href="ventas.html">Ventas</a>
-        </nav>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="clientes.html">Clientes</a>
+                <a href="diseños.html">Diseños</a>
+                <a href="materiales.html">Materiales</a>
+                <a href="productos.html">Productos</a>
+                <a href="orden-de-compra.html">Orden de Compra</a>
+                <a href="ventas.html">Ventas</a>
+            </nav>
 
-        <p class="nombre">PEPITO PEREZ</p>
-        <button class="button">Cerrar Sesión</button>
-    </header>
+            <div class="datos-usuario">
+                <p class="usuario">PEPITO PEREZ</p>
+                <button class="button" id="cerrar-sesion">Cerrar Sesión</button>
+            </div>
+        </header>
 
-    <main>
-        <div class="contenido-actual">
+        <div class="pagina-actual">
             <h2>INVENTARIOS / CLIENTES</h2>
         </div>
 
-        <div class="contenedor">
+        <section class="seccion">
             <ul class="contenedor-botones">
                 <li class="regresar">
                     <a href="index.html"><img src="img/back.svg" alt="icono regresar"></a>
@@ -131,14 +135,16 @@
                 </tr>
             </table>
 
-        </div>
+        </section>
+        
+        <footer>
+            <p>IP: ...........</p>
+            <p>DIA/MES/AÑO HORA</p>
+            
+            <p>Todos los derechos reservados Muebles H&L&copy;</p>
+        </footer>
     </main>
 
-    <footer>
-        <p>IP: ...........</p>
-        <p>DIA/MES/AÑO HORA</p>
-
-        <p>Todos los derechos reservados Muebles H&L&copy;</p>
-    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
