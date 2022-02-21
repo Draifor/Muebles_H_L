@@ -162,30 +162,50 @@ label input {
 div.contenedor-index {
     grid-template-rows: 158px
                         1fr
-                        0.3fr
-                        96px;
+                        100px;
     row-gap: 0;
 }
 @media only screen and (min-width:385px) {
     div.contenedor-index {
         grid-template-rows: 112px
                             1fr
-                            0.3fr
                             82px;
     }
 }
-@media only screen and (min-width:690px) {
+/* @media only screen and (min-width:1100px) {
     div.contenedor-index {
+        grid-template-rows: 10vw
+        1fr
+        8vw;
+    }
+    div.pagina-actual {
+        min-height: 2.8vw;
+    }
+} */
+div.pagina-actual {
+    background-color: #999999;
+    border: 2px solid #085394;
+    width: 100vw;
+}
+@media only screen and (min-width:690px) {
+    main {
+        display: grid;
         grid-template-columns: 1fr 4fr;
-        grid-template-rows: 113px
-                            1fr
-                            82px;
-        grid-template-areas:
+        /* grid-template-rows: 113px
+        1fr
+        82px; */
+        /* grid-template-areas:
         "my-header my-header"
         "my-aside my-main"
-        "my-footer my-footer";
+        "my-footer my-footer"; */
     }
-    header.header-index {
+    main aside {
+        grid-row: 1 / 2;
+    }
+    main section {
+        grid-column: 2 / 3;
+    }
+    /* header.header-index {
         grid-area: my-header;
     }
     main.seccion {
@@ -196,28 +216,9 @@ div.contenedor-index {
     }
     footer.footer-index {
         grid-area: my-footer;
-    }
-
+    } */
 }
-/* @media only screen and (min-width:1100px) {
-    div.contenedor-index {
-        grid-template-rows: 10vw
-                            1fr
-                            8vw;
-    }
-    div.pagina-actual {
-        min-height: 2.8vw;
-    }
-} */
-header.header-index h1{
-    /* float: none; */
-}
-div.pagina-actual {
-    background-color: #999999;
-    border: 2px solid #085394;
-    width: 100vw;
-}
-main.seccion {
+section.seccion {
     display: flex;
     justify-content: center;
     align-items: center;
