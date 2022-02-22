@@ -276,14 +276,14 @@ label input {
 /** PÁGINA PRINCIPAL **/
 
 @media only screen and (min-width:690px) {
-    main {
+    main.main-index {
         display: grid;
         grid-template-columns: 1fr 4fr;
     }
-    main aside {
+    main.main-index aside {
         grid-row: 1 / 2;
     }
-    main section {
+    main.main-index section {
         grid-column: 2 / 3;
     }
 }
@@ -356,14 +356,36 @@ aside button.button {
 
 /** PÁGINA CLIENTES**/
 
+section.seccion-tabla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+@media only screen and (min-width:1000px) {
+    div.contenedor-tabla main {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
 ul.contenedor-botones {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+ul.contenedor-botones li {
+    text-align: center;
 }
 ul.contenedor-botones a img{
     width: 30px;
 }
-
+div.contenedor-tabla table {
+    overflow: scroll;
+}
 table.clientes tr {
     background-color: antiquewhite;
 }
