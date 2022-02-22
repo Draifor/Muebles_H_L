@@ -53,13 +53,11 @@ header {
     background-color: #085394;
     border: 2px solid #274e13;
     display: grid;
-    /* justify-content: center; */
     overflow: hidden;
 }
 div.contenido-header {
     padding: 5px;
     display: grid;
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 1fr;
@@ -127,7 +125,6 @@ header.header-nav nav{
 header.header-nav nav a{
     color: #ded;
     padding: 5px 0;
-    /* margin: 2px 0; */
     width: 85px;
     text-align: center;
 }
@@ -137,29 +134,16 @@ header.header-nav nav a:last-child {
 header.header-nav nav a:hover{
     background-color: #085394;
 }
-header.header-nav div.contenido-header {
-    /* grid-column: 1 / 3; */
-}
 header.header-nav div.datos-usuario {
-    /* grid-column: 2 / 3; */
     display: flex;
     justify-content: end;
-    /* flex-wrap: wrap; */
     align-items: center;
-}
-header.header-nav div.datos-usuario p {
-    /* align-self: flex-end; */
-    /* text-align: center; */
 }
 header.header-nav div.datos-usuario button {
     padding: 4px;
-    /* align-self: flex-start; */
     margin: 0 10px 0 20px;
 }
-header.header-nav div.pagina-actual {
-    /* grid-column: 1 / 3; */
-}
-header.header-nav h2 {
+header.header-nav div.pagina-actual h2 {
     font-size: 1.1em;
 }
 @media only screen and (min-width:400px) {
@@ -179,7 +163,49 @@ header.header-nav h2 {
     }
 }
 @media only screen and (min-width:690px) {
-    
+    div.contenedor-tabla {
+        grid-template-rows: 200px
+                            1fr
+                            82px;
+    }
+    header.header-nav {
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 3fr
+        2fr
+        1fr;
+    }
+    header.header-nav div.contenido-header {
+        grid-column: 1 / 3;
+    }
+    header.header-nav nav {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+    header.header-nav div.datos-usuario {
+        grid-row: 2 / 3;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    header.header-nav div.datos-usuario button {
+        padding: 4px;
+        margin: 0;
+}
+    header.header-nav div.pagina-actual {
+        grid-column: 1 / 3;
+    }
+}
+@media only screen and (min-width:874px) {
+    div.contenedor-tabla {
+        grid-template-rows: 150px
+                            1fr
+                            82px;
+    }
+    header.header-nav {
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 20fr
+        13fr
+        12fr;
+    }
 }
 
 /** Footer **/
@@ -295,7 +321,6 @@ ul.menu-principal li a {
     height: 90px;
     background-color: #9fc5f8;
     font-size: 1.5em;
-    /* text-decoration: none; */
     color: #000;
     border: 2px solid #274e13;
     display: flex;
