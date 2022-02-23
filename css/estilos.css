@@ -389,3 +389,10 @@ div.contenedor-tabla table {
 table tr {
     background-color: antiquewhite;
 }
+
+/** Agregar Cliente **/
+
+div.contenedor-formulario main{
+    align-items: center;
+
+}
