@@ -1,26 +1,19 @@
 const btnIngresar = document.getElementById("ingresar");
 const btnCerrarSesion = document.getElementById("cerrar-sesion");
 const btnRegresar = document.getElementById("regresar");
+const btnBuscar = document.getElementById("buscar");
+const btnEliminar = document.getElementById("eliminar")
 
+//** Funciones **/
 // Función para iniciar sesión
 const iniciarSesion = evt => {
     location.href = "index.html";
     evt.preventDefault();
 }
 
-// Cerrar la sesión
-btnCerrarSesion.onclick = () => {
-    location.href = "inicio-sesion.html";
-}
-
-// Botón regresar
-btnRegresar.onclick = () => {
-    history.go(-1);
-}
-
 // Función para agregar cliente
 const agregarCliente = evt => {
-    location.href = "clientes.html"
+    location.href = "clientes.html";
     evt.preventDefault();
 }
 
@@ -32,7 +25,7 @@ const modificarCliente = evt => {
 
 // Función para agregar diseño
 const agregarDiseño = evt => {
-    location.href = "diseños.html"
+    location.href = "diseños.html";
     evt.preventDefault();
 }
 
@@ -44,7 +37,7 @@ const modificarDiseño = evt => {
 
 // Función para agregar producto
 const agregarProducto = evt => {
-    location.href = "productos.html"
+    location.href = "productos.html";
     evt.preventDefault();
 }
 
@@ -53,3 +46,61 @@ const modificarProducto = evt => {
     location.href = "productos.html";
     evt.preventDefault();
 }
+
+// Función para agregar material
+const agregarMaterial = evt => {
+    location.href = "materiales.html";
+    evt.preventDefault();
+}
+
+// Función para modificar material
+const modificarMaterial = evt => {
+    location.href = "materiales.html";
+    evt.preventDefault();
+}
+
+// Función para agregar venta
+const agregarVenta = evt => {
+    location.href = "ventas.html";
+    evt.preventDefault();
+}
+
+// Función para modificar venta
+const modificarVenta = evt => {
+    location.href = "ventas.html";
+    evt.preventDefault();
+}
+
+// Función para agregar orden de compra
+const agregarOrdenDeCompra = evt => {
+    location.href = "orden-de-compra.html";
+    evt.preventDefault();
+}
+
+// Función para modificar orden de compra
+const modificarOrdenDeCompra = evt => {
+    location.href = "orden-de-compra.html";
+    evt.preventDefault();
+}
+
+//** Botones **/
+// Cerrar la sesión
+btnCerrarSesion.onclick = () => {
+    location.href = "inicio-sesion.html";
+}
+
+// Botón regresar
+btnRegresar.onclick = () => {
+    history.go(-1);
+}
+
+// Botón buscar
+btnBuscar.onclick = () => {
+    alert("¿Qué estás buscando?");
+}
+
+// Botón eliminar
+btnEliminar.onclick = () => {
+    alert("¿A quién hay que eliminar?");
+}
+
