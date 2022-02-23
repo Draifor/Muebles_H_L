@@ -19,6 +19,9 @@ div.contenedor {
     min-height: 100vh;
     overflow: hidden;
 }
+div.contenedor-tabla section.seccion-tabla {
+    overflow: auto;
+}
 .seccion {
     padding: 30px;
 }
@@ -383,13 +386,16 @@ ul.contenedor-botones li {
 ul.contenedor-botones a img{
     width: 30px;
 }
-div.contenedor-tabla table {
-    overflow: scroll;
-}
 table tr {
     background-color: antiquewhite;
+    text-align: center;
 }
-
+table tr td {
+    padding: 5px 10px;
+}
+table tr:nth-child(even) {
+    background-color: rgb(165, 187, 207);
+}
 /** Agregar Cliente **/
 
 div.contenedor-formulario main{
