@@ -35,7 +35,7 @@
             <!--.datos-usuario-->
 
             <div class="pagina-actual">
-                <h2>MODIFICAR DISEÑO</h2>
+                <h2>AGREGAR PRODUCTO</h2>
             </div>
             <!--pagina-actual-->
         </header>
@@ -43,16 +43,16 @@
 
         <main class="contenedor-principal">
             <div class="contenido">
-                <h2>Diseño</h2>
+                <h2>Nuevo Producto</h2>
 
-                <form onsubmit="modificarDiseño(event);" name="modificar-diseño">
+                <form onsubmit="agregarProducto(event);" name="agregar-producto">
                     <label for="nombre"><span class="nombre">Nombre: </span> <input type="text"
                             placeholder="Nombre"></label>
-                    <label for="referencia"><span class="referencia">Referencia: </span> <input type="number"
-                            placeholder="Referencia"></label>
                     <label for="tipo"><span class="tipo">Tipo: </span> <input type="text" placeholder="Tipo"></label>
-                    <label for="archivo">Insertar diseño (.jpg*.png) <input class="archivo" type="file"></label>
-                    <input type="submit" value="Modificar" id="modificar-diseño" class="button">
+                    <label for="costo"><span class="costo">Costo: </span> <input type="number" placeholder="Costo"></label>
+                    <label for="precio"><span class="precio">Precio: </span> <input type="number" placeholder="Precio"></label>
+                    <label for="referencia"><span class="referencia">Referencia: </span> <input type="number" placeholder="Referencia"></label>
+                    <input type="submit" value="Agregar" id="agregar-producto" class="button">
                     <input type="button" value="Cancelar" id="regresar" class="button">
                 </form>
             </div>

@@ -41,3 +41,15 @@ const modificarDiseño = evt => {
     location.href = "diseños.html";
     evt.preventDefault();
 }
+
+// Función para agregar producto
+const agregarProducto = evt => {
+    location.href = "productos.html"
+    evt.preventDefault();
+}
+
+// Función para modificar producto
+const modificarProducto = evt => {
+    location.href = "productos.html";
+    evt.preventDefault();
+}
