@@ -386,6 +386,6 @@ ul.contenedor-botones a img{
 div.contenedor-tabla table {
     overflow: scroll;
 }
-table.clientes tr {
+table tr {
     background-color: antiquewhite;
 }

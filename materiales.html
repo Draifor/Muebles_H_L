@@ -9,118 +9,129 @@
 </head>
 
 <body>
-    <header>
-        <h1>MUEBLES H&L</h1>
-        <img src="img/logo.jpeg" alt="Logo Muebles H&L">
+    <div class="contenedor-tabla contenedor">
+        <header class="header-nav">
+            <div class="contenido-header">
+                <h1>MUEBLES H&L</h1>
+                <img src="img/logo.jpeg" alt="Logo Muebles H&L">
+            </div>
+            <!--.contenido-header-->
 
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="clientes.html">Clientes</a>
-            <a href="diseños.html">Diseños</a>
-            <a href="materiales.html">Materiales</a>
-            <a href="productos.html">Productos</a>
-            <a href="orden de compra.html">Orden de Compra</a>
-            <a href="ventas.html">Ventas</a>
-        </nav>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="clientes.html">Clientes</a>
+                <a href="diseños.html">Diseños</a>
+                <a href="#">Materiales</a>
+                <a href="productos.html">Productos</a>
+                <a href="ventas.html">Ventas</a>
+                <a href="orden-de-compra.html">Orden de Compra</a>
+            </nav>
 
-        <p class="nombre">PEPITO PEREZ</p>
-        <button class="button">Cerrar Sesión</button>
-    </header>
+            <div class="datos-usuario">
+                <p class="usuario">PEPITO PEREZ</p>
+                <button class="button" id="cerrar-sesion">Cerrar Sesión</button>
+            </div>
+            <!--.datos-usuario-->
 
-    <main>
-        <div class="contenido-actual">
-            <h2>INVENTARIOS / MATERIALES</h2>
-        </div>
+            <div class="pagina-actual">
+                <h2>MATERIALES - INVENTARIOS</h2>
+            </div>
+            <!--pagina-actual-->
+        </header>
+        <!--.header-nav-->
 
-        <div class="contenedor">
-            <ul class="contenedor-botones">
-                <li class="regresar">
-                    <a href="index.html"><img src="img/back.svg" alt="icono regresar"></a>
-                    <p>Regresar</p>
-                </li>
-                <li class="buscar">
-                    <a href="#"><img src="img/look.svg" alt="icono buscar"></a>
-                    <p>Buscar</p>
-                </li>
-                <li class="agregar">
-                    <a href="agregar-cliente.html"><img src="img/add.svg" alt="icono agregar"></a>
-                    <p>Agregar</p>
-                </li>
-                <li class="modificar">
-                    <a href="modificar-cliente.html"><img src="img/edit.svg" alt="icono modificar"></a>
-                    <p>Modificar</p>
-                </li>
-                <li class="eliminar">
-                    <a href="#"><img src="img/del.svg" alt="icono eliminar"></a>
-                    <p>Eliminar</p>
-                </li>
-            </ul>
+        <main>
+            <section class="seccion-tabla">
+                <ul class="contenedor-botones">
+                    <li class="regresar">
+                        <a href="index.html"><img src="img/back.svg" alt="icono regresar"></a>
+                        <p>Regresar</p>
+                    </li>
+                    <li class="buscar">
+                        <a href="#"><img src="img/look.svg" alt="icono buscar"></a>
+                        <p>Buscar</p>
+                    </li>
+                    <li class="agregar">
+                        <a href="agregar-cliente.html"><img src="img/add.svg" alt="icono agregar"></a>
+                        <p>Agregar</p>
+                    </li>
+                    <li class="modificar">
+                        <a href="modificar-cliente.html"><img src="img/edit.svg" alt="icono modificar"></a>
+                        <p>Modificar</p>
+                    </li>
+                    <li class="eliminar">
+                        <a href="#"><img src="img/del.svg" alt="icono eliminar"></a>
+                        <p>Eliminar</p>
+                    </li>
+                </ul><!--.contenedor-botones-->
 
-            <table class="clientes">
-                <tr>
-                    <td>COD MATERIAL</td>
-                    <td>REFERENCIA</td>
-                    <td>NOMBRE</td>
-                    <td>COSTO</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+                <table id="materiales">
+                    <tr>
+                        <td>COD MATERIAL</td>
+                        <td>REFERENCIA</td>
+                        <td>NOMBRE</td>
+                        <td>COSTO</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table><!--#materiales-->
+                </section><!--.seccion-tabla-->
+        </main>
 
-        </div>
-    </main>
+        <footer>
+            <p>IP: ...........</p>
+            <p>DIA/MES/AÑO HORA</p>
 
-    <footer>
-        <p>IP: ...........</p>
-        <p>DIA/MES/AÑO HORA</p>
+            <p>Todos los derechos reservados Muebles H&L&copy;</p>
+        </footer>
+    </div>
 
-        <p>Todos los derechos reservados Muebles H&L&copy;</p>
-    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

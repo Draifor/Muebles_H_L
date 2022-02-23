@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLIENTES - SISTEMA DE INVENTARIO</title>
+    <title>MATERIALES - SISTEMA DE INVENTARIO</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -14,65 +15,68 @@
             <div class="contenido-header">
                 <h1>MUEBLES H&L</h1>
                 <img src="img/logo.jpeg" alt="Logo Muebles H&L">
-            </div><!--.contenido-header-->
+            </div>
+            <!--.contenido-header-->
 
             <nav>
                 <a href="index.html">Inicio</a>
-                <a href="#">Clientes</a>
+                <a href="clientes.html">Clientes</a>
                 <a href="diseños.html">Diseños</a>
                 <a href="materiales.html">Materiales</a>
                 <a href="productos.html">Productos</a>
-                <a href="ventas.html">Ventas</a>
+                <a href="#">Ventas</a>
                 <a href="orden-de-compra.html">Orden de Compra</a>
             </nav>
 
             <div class="datos-usuario">
                 <p class="usuario">PEPITO PEREZ</p>
                 <button class="button" id="cerrar-sesion">Cerrar Sesión</button>
-            </div><!--.datos-usuario-->
+            </div>
+            <!--.datos-usuario-->
 
             <div class="pagina-actual">
-                <h2>CLIENTES - INVENTARIOS</h2>
-            </div><!--pagina-actual-->
-        </header><!--.header-nav-->
+                <h2>VENTAS - INVENTARIOS</h2>
+            </div>
+            <!--pagina-actual-->
+        </header>
+        <!--.header-nav-->
 
         <main>
             <section class="seccion-tabla">
                 <ul class="contenedor-botones">
-                    <li id="regresar">
+                    <li class="regresar">
                         <a href="index.html"><img src="img/back.svg" alt="icono regresar"></a>
                         <p>Regresar</p>
                     </li>
-                    <li id="buscar">
+                    <li class="buscar">
                         <a href="#"><img src="img/look.svg" alt="icono buscar"></a>
                         <p>Buscar</p>
                     </li>
-                    <li id="agregar">
+                    <li class="agregar">
                         <a href="agregar-cliente.html"><img src="img/add.svg" alt="icono agregar"></a>
                         <p>Agregar</p>
                     </li>
-                    <li id="modificar">
+                    <li class="modificar">
                         <a href="modificar-cliente.html"><img src="img/edit.svg" alt="icono modificar"></a>
                         <p>Modificar</p>
                     </li>
-                    <li id="eliminar">
+                    <li class="eliminar">
                         <a href="#"><img src="img/del.svg" alt="icono eliminar"></a>
                         <p>Eliminar</p>
                     </li>
-                </ul><!--.contenedor-botones-->
+                </ul>
+                <!--.contenedor-botones-->
 
-                <table id="clientes">
+                <table id="ventas">
                     <tr>
+                        <td>COD VENTA</td>
+                        <td>COD ORDEN DE COMPRA</td>
                         <td>COD CLIENTE</td>
-                        <td>NOMBRE</td>
-                        <td>APELLIDO</td>
-                        <td>N° DOCUMENTO</td>
-                        <td>CELULAR</td>
-                        <td>DIRECCIÓN</td>
+                        <td>FECHA</td>
+                        <td>FACTURA ID</td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -84,11 +88,9 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -100,11 +102,9 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -116,11 +116,9 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
                     </tr>
                     <tr>
                         <td>7</td>
-                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -132,10 +130,11 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
                     </tr>
-                </table><!--#clientes-->
-            </section><!--seccion-->
+                </table>
+                <!--#ventas-->
+            </section>
+            <!--.seccion-tabla-->
         </main>
 
         <footer>
@@ -148,4 +147,5 @@
 
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
