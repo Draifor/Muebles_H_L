@@ -396,3 +396,9 @@ div.contenedor-formulario main{
     align-items: center;
 
 }
+
+/** Agregar Diseño **/
+
+input.archivo {
+    border: none;
+}

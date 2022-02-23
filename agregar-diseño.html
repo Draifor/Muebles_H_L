@@ -35,7 +35,7 @@
             <!--.datos-usuario-->
 
             <div class="pagina-actual">
-                <h2>AGREGAR CLIENTE</h2>
+                <h2>AGREGAR DISEÑO</h2>
             </div>
             <!--pagina-actual-->
         </header>
@@ -43,14 +43,14 @@
 
         <main class="contenedor-principal">
             <div class="contenido">
-                <h2>Nuevo Cliente</h2>
+                <h2>Nuevo Diseño</h2>
 
-                <form onsubmit="agregarCliente(event);" name="agregar-cliente">
+                <form onsubmit="agregarDiseño(event);" name="agregar-diseño">
                     <label for="nombre"><span class="nombre">Nombre: </span> <input type="text" placeholder="Nombre"></label>
-                    <label for="identificacion"><span class="identificacion">Identificación: </span> <input type="number" placeholder="Identificación"></label>
-                    <label for="celular"><span class="celular">Celular: </span> <input type="number" placeholder="Celular"></label>
-                    <label for="direccion"><span class="direccion">Dirección: </span> <input type="text" placeholder="Dirección"></label>
-                    <input type="submit" value="Agregar" id="agregar-cliente" class="button">
+                    <label for="referencia"><span class="referencia">Referencia: </span> <input type="number" placeholder="Referencia"></label>
+                    <label for="tipo"><span class="tipo">Tipo: </span> <input type="text" placeholder="Tipo"></label>
+                    <label for="archivo">Insertar diseño (.jpg*.png) <input class="archivo" type="file"></label>
+                    <input type="submit" value="Agregar" id="agregar-diseño" class="button">
                     <input type="button" value="Cancelar" id="regresar" class="button">
                 </form>
             </div>

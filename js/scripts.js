@@ -23,3 +23,21 @@ const agregarCliente = evt => {
     location.href = "clientes.html"
     evt.preventDefault();
 }
+
+// Función para modificar cliente
+const modificarCliente = evt => {
+    location.href = "clientes.html";
+    evt.preventDefault();
+}
+
+// Función para agregar diseño
+const agregarDiseño = evt => {
+    location.href = "diseños.html"
+    evt.preventDefault();
+}
+
+// Función para modificar diseño
+const modificarDiseño = evt => {
+    location.href = "diseños.html";
+    evt.preventDefault();
+}
