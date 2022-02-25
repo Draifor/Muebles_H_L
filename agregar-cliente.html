@@ -46,12 +46,18 @@
                 <h2>Nuevo Cliente</h2>
 
                 <form onsubmit="agregarCliente(event);" name="agregar-cliente">
-                    <label for="nombre"><span class="nombre">Nombre: </span> <input type="text" placeholder="Nombre"></label>
-                    <label for="identificacion"><span class="identificacion">Identificación: </span> <input type="number" placeholder="Identificación"></label>
-                    <label for="celular"><span class="celular">Celular: </span> <input type="number" placeholder="Celular"></label>
-                    <label for="direccion"><span class="direccion">Dirección: </span> <input type="text" placeholder="Dirección"></label>
-                    <input type="submit" value="Agregar" id="agregar-cliente" class="button">
-                    <input type="button" value="Cancelar" id="regresar" class="button">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Nombre">
+                    <label for="identificacion">Identificación:</label>
+                    <input type="number" placeholder="Identificación">
+                    <label for="celular">Celular:</label>
+                    <input type="number" placeholder="Celular">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" placeholder="Dirección">
+                    <div>
+                        <input type="submit" value="Agregar" id="agregar-cliente" class="button">
+                        <input type="button" value="Cancelar" id="regresar" class="button">
+                    </div>
                 </form>
             </div>
             <!--.contenido-->
