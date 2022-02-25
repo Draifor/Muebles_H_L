@@ -20,7 +20,7 @@ div.contenedor {
     overflow: hidden;
 }
 div.contenedor-tabla section.seccion-tabla {
-    height: 100vh;
+    height: 80vh;
     overflow: auto;
 }
 .seccion {
@@ -363,7 +363,7 @@ aside button.button {
     }
 }
 
-/** Páginas con Tablas **/
+/* Contenedor con Tablas */
 
 section.seccion-tabla {
     display: flex;
@@ -371,7 +371,7 @@ section.seccion-tabla {
     align-items: center;
     max-width: 1000px;
 }
-@media only screen and (min-width:733px) {
+@media only screen and (min-width:880px) {
     section.seccion-tabla {
         justify-content: center;
     }
@@ -414,14 +414,22 @@ table tr td {
 
 /** Página Clientes**/
 
-@media only screen and (min-width:597px) {
-    section.seccion-tabla {
+table#clientes {
+    min-width: 790px;
+}
+@media only screen and (min-width:795px) {
+    section#clientes {
         justify-content: center;
     }
 }
 table tr th:first-child {
     max-width: 100px;
 }
+
+
+
+
+
 
 /** Agregar Cliente **/
 
