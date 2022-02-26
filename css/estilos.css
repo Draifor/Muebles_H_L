@@ -436,6 +436,9 @@ table#diseños {
         justify-content: center;
     }
 }
+table#diseños tr th:first-child {
+    max-width: 85px;
+}
 table#diseños tr td {
     white-space: normal;
     max-width: 200px;
@@ -444,6 +447,16 @@ table td img {
     width: 100px;
 }
 
+/** Página Materiales **/
+
+table#materiales {
+    min-width: 440px;
+}
+@media only screen and (min-width:440px) {
+    section#materiales {
+        justify-content: center;
+    }
+}
 
 /** Agregar Cliente **/
 
