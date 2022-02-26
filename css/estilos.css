@@ -426,9 +426,23 @@ table tr th:first-child {
     max-width: 100px;
 }
 
+/** Página Diseños**/
 
-
-
+table#diseños {
+    min-width: 780px;
+}
+@media only screen and (min-width:795px) {
+    section#diseños {
+        justify-content: center;
+    }
+}
+table#diseños tr td {
+    white-space: normal;
+    max-width: 200px;
+}
+table td img {
+    width: 100px;
+}
 
 
 /** Agregar Cliente **/
