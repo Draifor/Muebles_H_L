@@ -478,6 +478,19 @@ table#ventas tr th:nth-child(2) {
 table#ventas tr th:nth-child(3) {
     max-width: 85px;
 }
+
+/** Página Orden de Compra **/
+table#orden-de-compra {
+    min-width: 409px;
+}
+@media only screen and (min-width:415px) {
+    section#orden-de-compra {
+        justify-content: center;
+    }
+}
+table#orden-de-compra tr th:first-child {
+    min-width: 140px;
+}
 /** Agregar Cliente **/
 
 div.contenedor-formulario main{
