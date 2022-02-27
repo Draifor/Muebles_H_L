@@ -577,3 +577,26 @@ div.contenido-diseños div.insertar-diseño:hover {
         row-gap: 10px;
     }
 }
+
+/** Agregar Venta **/
+
+@media only screen and (max-width:414px) {
+    div.contenido-ventas {
+        row-gap: 20px;
+    }
+}
+div.contenido-ventas form label {
+    width: 163px;
+}
+form input[type="date"] {
+    padding: 2px;
+    width: 183px;
+}
+
+/** Agregar Orden de Compra **/
+
+@media only screen and (max-width:353px) {
+    div.contenido-orden-de-compra {
+        row-gap: 15px;
+    }
+}

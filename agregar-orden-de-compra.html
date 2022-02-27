@@ -42,19 +42,22 @@
         <!--.header-nav-->
 
         <main class="contenedor-principal">
-            <div class="contenido">
+            <div class="contenido-orden-de-compra contenido">
                 <h2>Nueva Orden de Compra</h2>
 
                 <form onsubmit="agregarOrdenDeCompra(event);" name="agregar-orden-de-compra">
-                    <label for="cliente-id"><span class="cliente-id">Cliente ID: </span> <input type="number"
-                            placeholder="Cliente ID"></label>
-                    <label for="fecha"><span class="fecha">Fecha: </span> <input type="date"></label>
-                    <label for="producto"><span class="producto">Producto: </span> <input type="number"
-                            placeholder="Producto"></label>
-                    <label for="cantidad"><span class="cantidad">Cantidad: </span> <input
-                            type="number" placeholder="Cantidad"></label>
-                    <input type="submit" value="Agregar" id="agregar-orden-de-compra" class="button">
-                    <input type="button" value="Cancelar" id="regresar" class="button">
+                    <label for="cliente-id">Cliente ID:</label>
+                    <input type="number" placeholder="Cliente ID">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date">
+                    <label for="producto">Producto:</label>
+                    <input type="number" placeholder="Producto">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" placeholder="Cantidad">
+                    <div>
+                        <input type="submit" value="Agregar" id="agregar-orden-de-compra" class="button">
+                        <input type="button" value="Cancelar" id="regresar" class="button">
+                    </div>
                 </form>
             </div>
             <!--.contenido-->
