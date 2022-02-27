@@ -42,18 +42,24 @@
         <!--.header-nav-->
 
         <main class="contenedor-principal">
-            <div class="contenido">
+            <div class="contenido-diseños contenido">
                 <h2>Diseño</h2>
 
                 <form onsubmit="modificarDiseño(event);" name="modificar-diseño">
-                    <label for="nombre"><span class="nombre">Nombre: </span> <input type="text"
-                            placeholder="Nombre"></label>
-                    <label for="referencia"><span class="referencia">Referencia: </span> <input type="number"
-                            placeholder="Referencia"></label>
-                    <label for="tipo"><span class="tipo">Tipo: </span> <input type="text" placeholder="Tipo"></label>
-                    <label for="archivo">Insertar diseño (.jpg*.png) <input class="archivo" type="file"></label>
-                    <input type="submit" value="Modificar" id="modificar-diseño" class="button">
-                    <input type="button" value="Cancelar" id="regresar" class="button">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Nombre">
+                    <label for="referencia">Referencia:</label>
+                    <input type="number" placeholder="Referencia">
+                    <label for="tipo">Tipo:</label>
+                    <input type="text" placeholder="Tipo">
+                    <div class="insertar-diseño button">
+                        <label for="archivo" id="label-diseño">Insertar diseño (.jpg*.png)</label>
+                        <input class="archivo" id="insertar-diseño" type="file">
+                    </div>
+                    <div>
+                        <input type="submit" value="Modificar" id="modificar-diseño" class="button">
+                        <input type="button" value="Cancelar" id="regresar" class="button">
+                    </div>
                 </form>
             </div>
             <!--.contenido-->

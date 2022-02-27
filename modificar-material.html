@@ -42,15 +42,20 @@
         <!--.header-nav-->
 
         <main class="contenedor-principal">
-            <div class="contenido">
+            <div class="contenido-materiales contenido">
                 <h2>Material</h2>
 
                 <form onsubmit="modificarMaterial(event);" name="modificar-material">
-                    <label for="nombre"><span class="nombre">Nombre: </span> <input type="text" placeholder="Nombre"></label>
-                    <label for="referencia"><span class="referencia">Referencia: </span> <input type="number" placeholder="Referencia"></label>
-                    <label for="costo"><span class="costo">Costo: </span> <input type="number" placeholder="Costo"></label>
-                    <input type="submit" value="Modificar" id="modificar-material" class="button">
-                    <input type="button" value="Cancelar" id="regresar" class="button">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Nombre">
+                    <label for="referencia">Referencia:</label>
+                    <input type="number" placeholder="Referencia">
+                    <label for="costo">Costo:</label>
+                    <input type="number" placeholder="Costo">
+                    <div>
+                        <input type="submit" value="Modificar" id="modificar-material" class="button">
+                        <input type="button" value="Cancelar" id="regresar" class="button">
+                    </div>
                 </form>
             </div>
             <!--.contenido-->

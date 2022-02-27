@@ -141,7 +141,7 @@ header.header-nav nav a:last-child {
     border: none;
 }
 header.header-nav nav a:hover{
-    background-color: #999;
+    background-color: #999999;
 }
 header.header-nav div.datos-usuario {
     display: flex;
@@ -565,4 +565,15 @@ div.contenido-diseños  div.insertar-diseño label {
 }
 div.contenido-diseños div.insertar-diseño:hover {
     cursor: auto;
+}
+
+/** Agregar Material, Agregar Producto**/
+
+@media only screen and (max-width:354px) {
+    div.contenido-materiales {
+        row-gap: 10px;
+    }
+    div.contenido-productos {
+        row-gap: 10px;
+    }
 }

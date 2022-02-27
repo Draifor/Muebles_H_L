@@ -42,21 +42,24 @@
         <!--.header-nav-->
 
         <main class="contenedor-principal">
-            <div class="contenido">
+            <div class="contenido-productos contenido">
                 <h2>Producto</h2>
 
                 <form onsubmit="modificarProducto(event);" name="modificar-producto">
-                    <label for="nombre"><span class="nombre">Nombre: </span> <input type="text"
-                            placeholder="Nombre"></label>
-                    <label for="tipo"><span class="tipo">Tipo: </span> <input type="text" placeholder="Tipo"></label>
-                    <label for="costo"><span class="costo">Costo: </span> <input type="number"
-                            placeholder="Costo"></label>
-                    <label for="precio"><span class="precio">Precio: </span> <input type="number"
-                            placeholder="Precio"></label>
-                    <label for="referencia"><span class="referencia">Referencia: </span> <input type="number"
-                            placeholder="Referencia"></label>
-                    <input type="submit" value="Modificar" id="modificar-producto" class="button">
-                    <input type="button" value="Cancelar" id="regresar" class="button">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Nombre">
+                    <label for="tipo">Tipo:</label>
+                    <input type="text" placeholder="Tipo">
+                    <label for="costo">Costo:</label>
+                    <input type="number" placeholder="Costo">
+                    <label for="precio">Precio:</label>
+                    <input type="number" placeholder="Precio">
+                    <label for="referencia">Referencia:</label>
+                    <input type="number" placeholder="Referencia">
+                    <div>
+                        <input type="submit" value="Modificar" id="modificar-producto" class="button">
+                        <input type="button" value="Cancelar" id="regresar" class="button">
+                    </div>
                 </form>
             </div>
             <!--.contenido-->

@@ -26,11 +26,6 @@ const modificarCliente = evt => {
     evt.preventDefault();
 }
 
-// Función para mostrar el nombre del archivo subido al input de agregar diseño
-inputDiseño.onchange = function () {
-    labelDiseño.innerHTML = inputDiseño.files[0].name;
-}
-
 // Función para agregar diseño
 const agregarDiseño = evt => {
     location.href = "diseños.html";
@@ -89,6 +84,11 @@ const agregarOrdenDeCompra = evt => {
 const modificarOrdenDeCompra = evt => {
     location.href = "orden-de-compra.html";
     evt.preventDefault();
+}
+
+// Función para mostrar el nombre del archivo subido al input de agregar diseño
+inputDiseño.onchange = function () {
+    labelDiseño.innerHTML = inputDiseño.files[0].name;
 }
 
 //** Botones **/
