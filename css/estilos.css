@@ -437,7 +437,7 @@ table#clientes {
     min-width: 790px;
 }
 @media only screen and (min-width:795px) {
-    section#clientes {
+    section.clientes {
         justify-content: center;
     }
 }
@@ -451,7 +451,7 @@ table#diseños {
     min-width: 780px;
 }
 @media only screen and (min-width:795px) {
-    section#diseños {
+    section.diseños {
         justify-content: center;
     }
 }
@@ -472,7 +472,7 @@ table#materiales {
     min-width: 440px;
 }
 @media only screen and (min-width:440px) {
-    section#materiales {
+    section.materiales {
         justify-content: center;
     }
 }
@@ -483,7 +483,7 @@ table#ventas {
     min-width: 578px;
 }
 @media only screen and (min-width:578px) {
-    section#ventas {
+    section.ventas {
         justify-content: center;
     }
 }
@@ -502,7 +502,7 @@ table#orden-de-compra {
     min-width: 409px;
 }
 @media only screen and (min-width:415px) {
-    section#orden-de-compra {
+    section.orden-de-compra {
         justify-content: center;
     }
 }
@@ -541,6 +541,28 @@ form[name*="cliente"] label {
 }
 /** Agregar Diseño **/
 
+@media only screen and (max-width:353px) {
+    div.contenido-diseños {
+        row-gap: 10px;
+    }
+}
 input.archivo {
+    padding: 0;
+    opacity: 0;
+    position: absolute;
+    width: 227px;
+}
+div.contenido-diseños div.insertar-diseño {
+    font-size: 14px;
+    width: fit-content;
+    background-color: #6aa84f;
+    border: 2px solid #274e13;
+}
+div.contenido-diseños  div.insertar-diseño label {
+    width: fit-content;
+    background-color: #6aa84f;
     border: none;
+}
+div.contenido-diseños div.insertar-diseño:hover {
+    cursor: auto;
 }

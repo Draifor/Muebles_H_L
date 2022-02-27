@@ -1,9 +1,12 @@
+// Declaración de variables
+
 const btnIngresar = document.getElementById("ingresar");
 const btnCerrarSesion = document.getElementById("cerrar-sesion");
 const btnRegresar = document.getElementById("regresar");
 const btnBuscar = document.getElementById("buscar");
 const btnEliminar = document.getElementById("eliminar")
-
+const inputDiseño = document.getElementById("insertar-diseño");
+const labelDiseño = document.getElementById("label-diseño");
 //** Funciones **/
 // Función para iniciar sesión
 const iniciarSesion = evt => {
@@ -21,6 +24,11 @@ const agregarCliente = evt => {
 const modificarCliente = evt => {
     location.href = "clientes.html";
     evt.preventDefault();
+}
+
+// Función para mostrar el nombre del archivo subido al input de agregar diseño
+inputDiseño.onchange = function () {
+    labelDiseño.innerHTML = inputDiseño.files[0].name;
 }
 
 // Función para agregar diseño
