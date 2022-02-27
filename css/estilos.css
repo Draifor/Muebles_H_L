@@ -56,7 +56,7 @@ div.contenedor {
 }
 header {
     background-color: #085394;
-    border: 2px solid #274e13;
+    /* border: 2px solid #274e13; */
     display: grid;
     overflow: hidden;
 }
@@ -66,6 +66,7 @@ div.contenido-header {
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 1fr;
+    border: 2px solid #274e13;
 }
 @media only screen and (min-width:400px){
     div.contenido-header {
@@ -98,7 +99,9 @@ div.contenedor-index {
 }
 div.pagina-actual {
     background-color: #999999;
-    border: 2px solid #274e13;
+    border: 2px solid #085394;
+    border-left: none;
+    border-right: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,6 +114,7 @@ div.contenedor-tabla {
                         1fr
                         100px;
     row-gap: 0;
+    background-color: #9fc5f8;
 }
 header.header-nav {
     grid-template-columns: 1fr;
@@ -124,25 +128,26 @@ header.header-nav nav{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #264258;
-    border: 1px solid #274e13;
+    background-color: #9fc5f8;
 }
 header.header-nav nav a{
-    color: #ded;
-    padding: 5px 15px;
-    /* width: 85px; */
+    color: #0c5394;
+    padding: 0 15px;
+    border-right: 2px solid #274e13;
     text-align: center;
 }
 header.header-nav nav a:last-child {
     width: 100%;
+    border: none;
 }
 header.header-nav nav a:hover{
-    background-color: #085394;
+    background-color: #999;
 }
 header.header-nav div.datos-usuario {
     display: flex;
     justify-content: end;
     align-items: center;
+    background-color: #9fc5f8;
 }
 header.header-nav div.datos-usuario button {
     padding: 4px;
@@ -165,7 +170,7 @@ header.header-nav div.pagina-actual h2 {
     }
     header.header-nav nav a:last-child {
         width: 140px;
-        padding: 5px 0;
+        padding: 0;
     }
 }
 @media only screen and (min-width:690px) {
@@ -371,6 +376,7 @@ section.seccion-tabla {
     flex-wrap: wrap;
     align-items: center;
     max-width: 1000px;
+    background-color: #9fc5f8;
 }
 @media only screen and (min-width:880px) {
     section.seccion-tabla {
@@ -396,7 +402,17 @@ ul.contenedor-botones li {
     margin-top: 5px;
 }
 ul.contenedor-botones a img{
-    width: 30px;
+    width: 25px;
+    border: 2px solid #6aa84f;
+    padding: 2px;
+}
+ul.contenedor-botones li:first-child img {
+    border: none;
+}
+table {
+    border: 2px solid;
+    border-collapse: collapse;
+    margin: 10px 0;
 }
 table tr {
     background-color: antiquewhite;
@@ -407,10 +423,12 @@ table tr:nth-child(even) {
 }
 table tr th {
     padding: 5px 5px;
+    border-left: 2px solid;
 }
 table tr td {
     padding: 5px 10px;
     white-space: nowrap;
+    border-left: 2px solid;
 }
 
 /** Página Clientes**/
@@ -491,13 +509,36 @@ table#orden-de-compra {
 table#orden-de-compra tr th:first-child {
     min-width: 140px;
 }
-/** Agregar Cliente **/
+
+/* Contenedor con Formularios */
 
 div.contenedor-formulario main{
     align-items: center;
-
+}
+div.contenedor-formulario div.contenido {
+    background-color: #7bb3e3;
+    margin: 10px 0;
+}
+div.contenedor-formulario form label {
+    background-color: #9fc5f8;
+    border: 1px solid #274e13;
+}
+div.contenedor-formulario form div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
+/** Agregar Cliente **/
+
+@media only screen and (max-width:364px) {
+    div.contenido-clientes {
+        row-gap: 10px;
+    }
+}
+form[name*="cliente"] label {
+    width: 120px;
+}
 /** Agregar Diseño **/
 
 input.archivo {
