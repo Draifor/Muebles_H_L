@@ -86,11 +86,6 @@ const modificarOrdenDeCompra = evt => {
     evt.preventDefault();
 }
 
-// Función para mostrar el nombre del archivo subido al input de agregar diseño
-inputDiseño.onchange = function () {
-    labelDiseño.innerHTML = inputDiseño.files[0].name;
-}
-
 //** Botones **/
 // Cerrar la sesión
 btnCerrarSesion.onclick = () => {
@@ -112,3 +107,7 @@ btnEliminar.onclick = () => {
     alert("¿A quién hay que eliminar?");
 }
 
+// Función para mostrar el nombre del archivo subido al input de agregar diseño
+inputDiseño.onchange = function () {
+    labelDiseño.innerHTML = inputDiseño.files[0].name;
+}
